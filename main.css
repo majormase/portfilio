@@ -1,0 +1,124 @@
+header {
+    background-color: var(--gold);
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    /* box-shadow: 0 0 25px 0 black; */
+    opacity: .6;
+
+}
+header img {
+    height: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+header * {
+    display: inline;
+}
+
+header li {
+    margin: 20px;
+    font-family: 'Oxygen';
+    transform: translate(517px);
+    cursor: pointer;
+}
+
+header li a {
+    color: black;
+    text-decoration: none;
+}
+
+header li:hover {
+  border-bottom: 1px solid black;
+}
+
+/* ========== SOCIALS ICONS ============== */
+
+.fa {
+  padding: 5px;
+  font-size: 20px;
+  width: 10px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 20%;
+}
+
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+
+/* Facebook */
+.fa-facebook {
+  background: grey;
+  color: white;
+  height: 11px;
+}
+
+/* =============VIDEO============ */
+
+.section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: white;
+  text-shadow: 2px 2px 4px var(--blue);
+}
+
+video {
+  color: black;
+  text-shadow: 2px 2px 4px var(--blue);
+  /* filter: blur(2px); */
+  width: 100%;
+}
+
+.section form {
+  text-align: center;
+  font-size: 6rem;
+  font-family: "Oxygen";
+  padding: 20px;
+  margin: 15px;
+  /* z-index: 1; */
+  opacity: 0.6;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  text-shadow: 2px 2px 4px var(--blue);
+  z-index: -1;
+}
+
+.color-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--blue);
+  width: 100%;
+  height: 100vh;
+  opacity: 0.5;
+  filter: blur(4px;);
+}
+
+.section img {
+  height: 20%;
+  opacity: .8;
+}
