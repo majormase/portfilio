@@ -1,5 +1,4 @@
 header {
-    background-color: var(--gold);
     position: sticky;
     z-index: 2;
     top: 0;
@@ -9,58 +8,58 @@ header {
     overflow: hidden;
     display: flex;
     align-items: center;
-    /* box-shadow: 0 0 25px 0 black; */
     opacity: .6;
-
-}
-header img {
-    height: 40px;
-    margin-left: 40px;
-    margin-right: 40px;
 }
 
 header * {
     display: inline;
 }
 
-header li {
-    margin: 20px;
-    font-family: 'Oxygen';
-    transform: translate(517px);
+nav ul {
+  transform: translate(517px);
+}
+
+#about {
+  transform: translate(0px 100px);
+}
+
+nav li {
+    margin-left: 1020px;
+    font-family: 'Helvetica';
     cursor: pointer;
-}
-
-header li a {
     color: black;
-    text-decoration: none;
 }
 
-header li:hover {
-  border-bottom: 1px solid black;
-}
 
 /* ========== SOCIALS ICONS ============== */
 
 .fa {
+  margin: 20px;
   padding: 5px;
   font-size: 20px;
   width: 10px;
   text-align: center;
   text-decoration: none;
   border-radius: 20%;
+  color: black;
 }
 
 
 .fa:hover {
-  opacity: 0.7;
+  color: black;
+  opacity: 1;
 }
 
 
 /* Facebook */
 .fa-facebook {
-  background: grey;
-  color: white;
-  height: 11px;
+  color: black;
+  height: 13px;
+}
+
+.fa-github {
+  color: black;
+  font-size: 25px;
 }
 
 /* =============VIDEO============ */
@@ -77,48 +76,47 @@ header li:hover {
   text-shadow: 2px 2px 4px var(--blue);
 }
 
-video {
+img {
   color: black;
-  text-shadow: 2px 2px 4px var(--blue);
-  /* filter: blur(2px); */
-  width: 100%;
-}
-
-.section form {
-  text-align: center;
-  font-size: 6rem;
-  font-family: "Oxygen";
-  padding: 20px;
-  margin: 15px;
-  /* z-index: 1; */
-  opacity: 0.6;
-  display: flex;
-  flex-direction: column;
   width: 30%;
 }
 
-.video-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  color: white;
-  text-shadow: 2px 2px 4px var(--blue);
-  z-index: -1;
+/* ===============SITES============== */
+
+.link {
+  display: flex;
+  margin-top: 50px;
 }
 
-.color-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: var(--blue);
-  width: 100%;
-  height: 100vh;
-  opacity: 0.5;
-  filter: blur(4px;);
+.sidebar img {
+  width: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 200px;
 }
 
-.section img {
-  height: 20%;
-  opacity: .8;
+.info {
+  width: 50%;
+  padding: 15px;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+
+h2 {
+  font-family: 'Helvetica';
+  font-weight: 500;
+  margin-top: -5px;
+}
+
+h4 {
+  font-family: 'Helvetica';
+  font-weight: 400;
+}
+
+/* =================FOOTER============== */
+
+.footerlink {
+  display: flex;
+  justify-content: space-around;
 }
