@@ -2,13 +2,15 @@
 <html lang="en" dir="ltr" ng-app="MyApp" ng-controller="MyController as ctrl">
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Nunito|Oswald|Oxygen&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="shortcut icon" href="favicon.ico" type="assets/logo.JPG"/>
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" type="image/jpeg" href="assets/logo.JPG">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="app.js" charset="utf-8"></script>
   <title></title>
 </head>
 
@@ -19,11 +21,32 @@
     <a href="https://github.com/majormase"><i class="fa fa-github" style="font-size:24px" aria-hidden="true"></i></a>
     <nav>
       <ul>
-        <li id="about">about</li>
+        <li id="about" class="openModal">about</li>
+        <a href="https://www.slideshare.net/slideshow/embed_code/key/gLQCb2l1N0bqLR"<li>resume</li></a>
       </ul>
     </nav>
 
   </header>
+  <div id="modal">
+    <div id="modal-textbox">
+      <div class="modalstyle">
+
+
+      <h4>You’re in the right place! I’m Mason. I’ve always had a knack for abstract meanings and functions in how people interact with art and tools.</h4>
+
+<h4>After high school, I wanted a new perspective on life, so I journeyed to Sydney, Australia to begin my education in philosophy and psychology. After a year, I came home to continue my degree while working as a marketing logistics manager with The Kroger Company. My time there taught me leadership and team management. I soon finished my degree in philosophy at FCU and began my tech journey at General Assembly.</h4>
+
+<h4>After visiting many places and meeting many people, I’ve managed to create my personal life formula: fully invest in everything you do, walk humbly and have an attitude of thankfulness in every step along the way. Commitment to my axioms has pushed me to expand my love for technology, communication and people.</h4>
+
+<h4>I’m always looking forward for new challenges and opportunities for growth, so don’t be hesitant about sending a message!</h4>
+</div>
+      <div class="modal-footer">
+
+        <a id="close" class="modal-buttons">Close</a>
+      </div>
+    </div>
+  </div>
+
 
   <div class="section">
     <img src="assets/logo.JPG" alt="">
@@ -39,31 +62,33 @@
         <div class="info">
           <h2>favorite things</h2>
           <h4>description</h4>
-          <a href="#"><h4>link</h4></a>
+          <a href="https://young-castle-35722.herokuapp.com/things"><h4>link</h4></a>
 
         </div>
 
       </div>
       <div class="link"  >
         <div class="sidebar">
-          <img src="assets/musiq_spectr.jpeg" alt="" style="width:39%">
+          <img src="assets/musiq_spectr.jpeg" alt="" >
         </div>
         <div class="info">
           <h2>musiqspectr</h2>
           <h4>description</h4>
-          <a href="#"><h4>link</h4></a>
+          <a href="https://musiqspectr.herokuapp.com/"><h4>link</h4></a>
 
         </div>
 
       </div>
       <div class="link">
         <div class="sidebar">
-          <img src="assets/wander_lust.jpeg" alt="" style="width:55%">
+          <img src="assets/wander_lust.jpeg" alt="" >
         </div>
         <div class="info">
           <h2>wanderlust</h2>
-          <h4>description</h4>
-          <a href="#"><h4>link</h4></a>
+          <h4>Wanderlust is a vacationing blog site that was built on java script, angular express and mongoose. The site posesses user authentication, allowing a new user to make and account, and secure their stored data.</h4>
+          <h4>After logging in, a user can create a post complete with a name, image and description of the trip. A search bar was also included to quickly sort through posts to find the desired content.</h4>
+          <h4>The site is very user friendly and secure, allowing only a loggedmember to edit information while still letting anyone view the posts.</h4>
+          <a href="https://hidden-oasis-59383.herokuapp.com/"><h4>link</h4></a>
 
         </div>
 
@@ -74,20 +99,25 @@
         </div>
         <div class="info">
           <h2>overture</h2>
-          <h4>description</h4>
-          <a href="#"><h4>link</h4></a>
+          <h4>Overture was desgined with Ruby on Rails, postgres, SQL and React. Overture is a portfilio hosting site, where users can add their resumes, templates and sites for exposure.</h4>
+          <h4>The site allows its users to make an account, add a title, image of the site, link and a breift description of what they made. If need be, the user can also edit any changes, or delete the whole listing.
+          <a href="https://murmuring-lowlands-49116.herokuapp.com/"><h4>link</h4></a>
 
         </div>
 
       </div>
       <div class="link">
         <div class="sidebar">
-          <img src="assets/book_room.jpeg" alt="" style="width:65%">
+          <img src="assets/book_room.jpeg" alt="" >
         </div>
         <div class="info">
           <h2>the book room</h2>
-          <h4>description</h4>
-          <a href="#"><h4>link</h4></a>
+          <h4>I developed a book query app that, when a title is put into the search bar, a form will be submitted that responds with the book title, author, publishing house and a brief description of the book. The design is focused around utility and minimalism. </h4>
+
+<h4>My inspiration was from Google's search page. The page is white space, a title, search bar and ancillary information in tabs about the page. I researched user-font reactions and color theory to best intrigue the user while keeping focus on the page's primary function. </h4>
+
+<h4>The code is structured around the API as a center piece. When a form is submitted, the API responds with the desired information. A modal is attached later to offer a short inspirational quote and a brief description on how to operate the site.</h4>
+          <a href="https://majormase.github.io/"><h4>link</h4></a>
 
         </div>
 
