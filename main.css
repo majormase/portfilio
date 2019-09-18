@@ -1,5 +1,4 @@
 header {
-    position: sticky;
     z-index: 2;
     top: 0;
     left: 0;
@@ -113,21 +112,18 @@ img {
 
 h2 {
   font-family: 'Helvetica';
+  font-size: 2em;
   font-weight: 500;
   margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 h4 {
   font-family: 'Helvetica';
   font-weight: 400;
   margin-top: 20px;
+  font-size: 1.1em;
   text-align: justify;
-}
-
-h5 {
-  font-family: 'Helvetica';
-  font-weight: 400;
-  margin-top: 20px;
 }
 
 a {
@@ -183,7 +179,7 @@ a {
   margin-right: 10px;
 }
 #close {
-  transform: translate(480px, 19px)
+  transform: translate(470px, 19px)
 }
 
 .modal-buttons {
@@ -220,11 +216,43 @@ a {
   .fa {
     margin: 10px;
     padding: 5px;
-    font-size: 10px;
+    font-size: 40px;
     width: 5px;
     text-align: center;
     text-decoration: none;
     border-radius: 20%;
     color: black;
+  }
+  .sidebar img {
+    width: 60%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+  .info {
+    width: 80%;
+    padding: 15px;
+    box-sizing: border-box;
+    overflow: auto;
+    display: inline-block;
+  }
+  img {
+    color: black;
+    width: 80%;
+  }
+  h2 {
+    font-family: 'Helvetica';
+    font-size: 2em;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  h4 {
+    font-family: 'Helvetica';
+    font-weight: 400;
+    margin-top: 20px;
+    font-size: 1.1em;
+    text-align: justify;
   }
 }
