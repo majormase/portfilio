@@ -208,13 +208,13 @@ a {
 
 /* ===================MOBILE============== */
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
 
   header {
     height: 60px;
   }
   .fa {
-    margin: 10px;
+    margin: 25px;
     padding: 5px;
     font-size: 40px;
     width: 5px;
